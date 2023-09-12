@@ -13,10 +13,11 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
 
-  <body class="sidesMargin">
-    <header class="container-fluid">
-      <nav class="navbar navbar-expand-md text-white">
-        <a href="" class="navbar-brand text-white">Krypto</a>
+  <body>
+    <!-- Navbar section -->
+    <header class="container-fluid sideMargin py-3 py-sm-4">
+      <nav class="navbar navbar-expand-sm text-white">
+        <a href="" class="navbar-brand text-white krptoFont">KRYPTO</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -26,12 +27,14 @@
           <img src="../../assets/menu.png" alt="menu-icon" />
         </button>
 
-        <div class="collapse navbar-collapse align-self-lg-end" id="btn">
+        <div class="collapse navbar-collapse align-self-lg-end overlayBg" id="btn">
           <ul class="ms-auto navbar-nav">
-            <li class="nav-item">
-              <a href="#">about</a>
-              <a href="#">pricing</a>
-              <a href="#">contact</a>
+            <li
+              class="nav-item text-white d-flex flex-column flex-sm-row gap-sm-4 align-items-sm-baseline align-items-center gap-5 "
+            >
+              <a href="#" class="text-white text-decoration-none mt-2 mt-s-0">about</a>
+              <a href="#" class="text-white text-decoration-none">pricing</a>
+              <a href="#" class="text-white text-decoration-none">contact</a>
               <a href="#" class="nfts">
                 <img src="../assets/nfts-logo.png" alt="logo nfts" />
                 <span>buy nfts</span>
@@ -42,20 +45,30 @@
       </nav>
     </header>
 
+    <!-- Main section -->
     <main>
+      <!-- Hero Section -->
       <section
-        class="ellipse d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center hero-custom"
+        class="sideMargin ellipse d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center hero-custom"
       >
-        <div class="d-flex justify-content-center mt-5 w-50">
-            <img src="../assets/computer.png" alt="computer desktop">
-
+        <div class="d-flex justify-content-center mt-5 w-50 w-desktop">
+          <img
+            class="d-sm-none"
+            src="../assets/computer.png"
+            alt="computer desktop"
+          />
+          <img
+            class="d-none d-sm-block"
+            src="../assets/computer_desktop.png"
+            alt="computer"
+          />
         </div>
         <div>
-          <p class="text-white text-center fontFamily">
+          <p class="text-white text-center text-lg-start fontFamily mt-4 mb-4">
             discover and collect <span class="rare"> rare </span> NFTs
           </p>
 
-          <p class="para-2-hero text-center mb-1">
+          <p class="para-2-hero text-center text-lg-start mb-4">
             The most secure marketplace for buying and selling unique crypto
             assets
           </p>

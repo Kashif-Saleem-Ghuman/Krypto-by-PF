@@ -18,34 +18,94 @@
 
 body {
   background-color: var(--background-color);
-  background-image: url("../assets/ellipse01.png");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
-
+.sideMargin {
+  padding: 0 6.4vw;
+}
 .navbarCustom > li > a {
   color: var(--textWhite);
+}
+
+.krptoFont {
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: var(--textWhite);
+  line-height: 1;
 }
 
 .fontFamily {
   font-family: "Outfit";
   font-weight: 700;
-  font-size: 17vw;
+  font-size: 5vw;
   color: var(--textWhite);
+  line-height: 1;
 }
 .nfts {
   background-color: var(--nfts-background);
   color: var(--textWhite);
   border-radius: 20px;
-  padding: 1rem;
+  padding: 0 1vw;
   text-decoration: none;
-  width: 0.0798%;
+  width: max-content;
+  font-family: "Outfit";
+  font-size: 1vw ;
+  font-weight: 600;
+
+}
+
+.rare {
+  color: var(--text-cyan);
+}
+
+.para-2-hero {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: var(--textWhite);
+}
+
+.button-purple {
+  background-color: var(--nfts-background);
+  color: var(--textWhite);
+  border-radius: 20px;
+  font-family: "Outfit";
+  font-weight: 600;
+  text-align: center;
+  width: 16vw;
+  font-size: 1.4vw;
+  padding: 0.5vw;
+  border: none;
+  transition: ease-in-out 0.3s;
+  transition-duration: 0.5s;
+}
+
+.button-purple:hover {
+  transform: scale(1.1);
+}
+
+.button-outline-white {
+  background-color: transparent;
+  color: var(--textWhite);
+  border-radius: 20px;
+  font-family: "Outfit";
+  font-weight: 600;
+  text-align: center;
+  width: 16vw;
+  font-size: 1.4vw;
+  padding: 0.5vw;
+  border: 1px solid var(--border);
+  transition: ease-in-out 0.3s;
+  transition-duration: 0.5s;
+}
+
+.button-outline-white:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
   .hero-custom {
-    margin: 0 6.4vw;
+    padding: 0 6.4vw;
   }
 
   .fontFamily {
@@ -53,6 +113,14 @@ body {
     font-weight: 700;
     font-size: 17vw;
     color: var(--textWhite);
+  }
+
+  .krptoFont {
+    font-family: "Outfit";
+    font-weight: 600;
+    font-size: 5vw;
+    color: var(--textWhite);
+    line-height: 1;
   }
 
   .rare {
@@ -112,5 +180,24 @@ body {
     background-image: url("../assets/ellipse02.png");
     background-position: bottom right;
     background-repeat: no-repeat;
+  }
+
+  .overlayBg {
+    margin: 2vh 0 ;
+    padding: 4vw;
+    background-color: rgba(49,4,100, 0.2);
+  }
+
+  .nfts {
+    background-color: var(--nfts-background);
+    color: var(--textWhite);
+    border-radius: 20px;
+    padding: 0 4vw;
+    text-decoration: none;
+    width: max-content;
+    font-family: "Outfit";
+    font-size: 4vw ;
+    font-weight: 600;
+  
   }
 }
