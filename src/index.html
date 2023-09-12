@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krypto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krypto</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link href="./style.css" rel="stylesheet">
-</head>
+  <body>
+    <nav class="navbar navbar-expand-md text-white">
+      <a href="" class="navbar-brand text-white">Krypto</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#btn"
+      >
+        <img src="../../assets/menu.png" alt="menu-icon" />
+      </button>
 
-<body>
+      <div class="collapse navbar-collapse align-self-lg-end" id="btn">
+        <ul class="ms-auto navbar-nav">
+          <li class="nav-item d-lg-flex">
+            <a href="#">about</a>
+            <a href="#">pricing</a>
+            <a href="#">contact</a>
+            <a href="#" class="nfts">
+              <img src="../assets/nfts-logo.png" alt="logo nfts" />
+              <span>buy nfts</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-md text-white">
+    <main>
+      <section
+        class="d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center hero-custom"
+      >
+        <div class="img-background">
+          <img
+            src="../assets/computer_desktop.png"
+            alt="computer"
+            class="img-fluid mt-4 mb-1"
+          />
+        </div>
+        <div>
+          <p class="text-white text-center fontFamily">
+            discover and collect <span class="rare"> rare </span> NFTs
+          </p>
 
-    <a href="" class="navbar-brand text-white">Krypto</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
-      <img src="../../assets/menu.png" alt="menu-icon" />
-    </button>
+          <p class="para-2-hero text-center mb-1">
+            The most secure marketplace for buying and selling unique crypto
+            assets
+          </p>
 
-    <div class="collapse navbar-collapse align-self-lg-end" id="btn">
-      <ul class="navbar-nav ">
-        <li class="nav-item d-lg-flex">
-          <a href="#">about</a>
-          <a href="#">pricing</a>
-          <a href="#">contact</a>
-          <a href="#" class="nfts">
-            <img src="../assets/nfts-logo.png" alt="logo nfts">
-            <span>buy nfts</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+          <div class="d-flex gap-2">
+            <button class="button-purple" type="button">buy nfts</button>
+            <button class="button-outline-white" type="button">
+              sell nfts
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  </nav>
-
-  <main>
-    <section class="d-flex flex-column">
-      <img src="../assets/computer.png" alt="computer" class="w-50">
-      <p>
-        discover and collect rare NFTs
-      </p>
-
-    </section>
-
-
-  </main>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
