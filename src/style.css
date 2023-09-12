@@ -18,12 +18,22 @@
 
 body {
   background-color: var(--background-color);
+  background-image: url("../assets/ellipse01.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .navbarCustom > li > a {
   color: var(--textWhite);
 }
 
+.fontFamily {
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 17vw;
+  color: var(--textWhite);
+}
 .nfts {
   background-color: var(--nfts-background);
   color: var(--textWhite);
@@ -33,55 +43,74 @@ body {
   width: 0.0798%;
 }
 
-.hero-custom {
-  margin: 0 6.4vw;
-}
+@media screen and (max-width: 768px) {
+  .hero-custom {
+    margin: 0 6.4vw;
+  }
 
-.fontFamily {
-  font-family: "Outfit";
-  font-weight: 700;
-  font-size: 17vw;
-  color: var(--textWhite);
-}
+  .fontFamily {
+    font-family: "Outfit";
+    font-weight: 700;
+    font-size: 17vw;
+    color: var(--textWhite);
+  }
 
-.rare {
-  color: var(--text-cyan);
-}
+  .rare {
+    color: var(--text-cyan);
+  }
 
-.para-2-hero {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 5.3vw;
-  color: var(--textWhite);
-}
+  .para-2-hero {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 5.3vw;
+    color: var(--textWhite);
+  }
 
-.button-purple {
-  background-color: var(--nfts-background);
-  color: var(--textWhite);
-  border-radius: 20px;
-  font-family: "Outfit";
-  font-weight: 600;
-  text-align: center;
-  width: 40.8vw;
-  font-size: 5vw;
-  padding: 1.5vw;
-  border: none;
-}
+  .button-purple {
+    background-color: var(--nfts-background);
+    color: var(--textWhite);
+    border-radius: 20px;
+    font-family: "Outfit";
+    font-weight: 600;
+    text-align: center;
+    width: 40.8vw;
+    font-size: 5vw;
+    padding: 1.5vw;
+    border: none;
+    transition: ease-in-out 0.3s;
+    transition-duration: 0.5s;
+  }
 
-.button-outline-white {
-  background-color: transparent;
-  color: var(--textWhite);
-  border-radius: 20px;
-  font-family: "Outfit";
-  font-weight: 600;
-  text-align: center;
-  width: 40.8vw;
-  font-size: 5vw;
-  padding: 1.5vw;
-  border: 1px solid var(--border);
-}
+  .button-purple:hover {
+    transform: scale(1.1);
+  }
 
-.img-background{
-  background-color: #312964;
-  opacity: 20%;
+  .button-outline-white {
+    background-color: transparent;
+    color: var(--textWhite);
+    border-radius: 20px;
+    font-family: "Outfit";
+    font-weight: 600;
+    text-align: center;
+    width: 40.8vw;
+    font-size: 5vw;
+    padding: 1.5vw;
+    border: 1px solid var(--border);
+    transition: ease-in-out 0.3s;
+    transition-duration: 0.5s;
+  }
+
+  .button-outline-white:hover {
+    transform: scale(1.1);
+  }
+
+  .img-background {
+    background-image: url("../assets/computer_desktop.png");
+  }
+
+  .ellipse {
+    background-image: url("../assets/ellipse02.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
 }
